@@ -34,12 +34,12 @@
       <input type="text" name="nombre" placeholder="Nombre" required >
       <input type="text" name="marca" placeholder="Marca" required >
       <input type="text" name="modelo" placeholder="Modelo" required >
-      <input type="text" name="anio"  placeholder="Año" required >
+      <input type="number" name="anio"  placeholder="Año" required >
       <input type="text" name="matricula" placeholder="Matricula" required >
       <input type="text" name="color"  placeholder="Color" required >
       <input type="text" name="descripcion" placeholder="Descripcion" required >
         <input type="file" name="imagen" class="hidden"required>
-      <button><a href="{{route('coche.index')}}">Mandar</a></button>
+      <button><a href="{{route('coche.store')}}">Mandar aqui</a></button>
 
     </form>
 {{-- <button><a href="{{route('coche.index')}}">Mandar</a></button> --}}

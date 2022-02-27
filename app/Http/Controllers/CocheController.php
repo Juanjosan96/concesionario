@@ -13,7 +13,9 @@ class CocheController extends Controller
      */
     public function index()
     {
-        $coches=Coche::paginate();   
+        // $coches=Coche::orderBy('id')->paginate();
+        $coches=Coche::orderBy('id','desc')->take(6)->get();   
+
         return view('coche.index',compact('coches'));
     }
 
@@ -56,7 +58,7 @@ class CocheController extends Controller
         // $cocha =Coche::orderby('nombre')->get();
         // $cocha->push();
         $datos->save();
-        return redirect()->route('coche.show',$datos);
+        return redirect()->route('coche.index');
 
         
     }
