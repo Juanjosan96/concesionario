@@ -14,26 +14,26 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-// Route::get('/',HomeController::class);
+// Route::get('/',HomeController::class);     posible colocacion
 
 Route::controller(CocheController::class)->group(function(){
   Route::get('/','index')->name('coche.index');
 
-  Route::get('coche/create','create')->name('coche.pata');  //cambiar nombres
+  Route::get('coche/create','create')->name('coche.create');  //cambiar nombres
 
 
-  Route::post('coche','store')->name('coche.crear');  //cambiar nombres
+  Route::post('coche','store')->name('coche.store');  //cambiar nombres
 
   
   Route::get('coche/{datos}','show')->name('coche.show');
 
 
-  Route::get('coche/{datos}/edit','edit')->name('coche.edicion');
+  Route::get('coche/{datos}/edit','edit')->name('coche.edit');
 
 
-  Route::put('coche/{datos}','update')->name('coche.actualizar');  
+  Route::put('coche/{datos}','update')->name('coche.update');  
 
-  Route::delete('coche/{datos}','destroy')->name('coche.eliminar');  //cambiar nombres
+  Route::delete('coche/{datos}','destroy')->name('coche.destroy');  //cambiar nombres
 
 });
 

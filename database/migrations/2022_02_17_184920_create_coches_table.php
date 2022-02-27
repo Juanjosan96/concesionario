@@ -21,8 +21,8 @@ class CreateCochesTable extends Migration
             $table->integer('anio');
             $table->string('matricula');
             $table->string('color');
-            $table->string('descripcion');
-            $table->string('imagen');
+            $table->text('descripcion');
+            $table->string('imagen')->nullable();
             $table->timestamps();
         });
     }

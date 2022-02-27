@@ -9,4 +9,5 @@ class Coche extends Model
 {
     use HasFactory;
     protected $fillable =['id','nombre','marca','modelo','anio','matricula','color','descripcion','imagen'];
+    
 }

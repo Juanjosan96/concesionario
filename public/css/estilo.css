@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Noto Serif;
+    src: url('\fonts\NotoSerif-Regular.ttf');
+    font-family: Noto Sans TC;
+    src: url('\fonts\NotoSansTC-Regular.otf');
+}
+
+
+/*DESIGN MOBILE FIRST*/
+
+body {
+    background-color: #1d1d1d;
+    /* background-color: #746c6c; */
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+p,
+a {
+    font-family: Noto Sans;
+}
+
+.hero {
+    font-weight: bold;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding: 1em 0 2em 0;
+    margin: 1em 1em 0 0;
+    background-image: linear-gradient(to right, #000000, #c93535);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.nav-hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav-hero a {
+    margin-top: 0.2em;
+}
+
+.hero img {
+    width: 60%;
+}
+
+.hero a {
+    text-decoration: none;
+    color: white;
+}
+
+.bienvenida {
+    font-weight: bold;
+    margin: 1em 1em 0 0;
+    font-family: Noto Serif;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    margin: 4em;
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+    height: 400px;
+}
+
+.blog {
+    margin: 1em 1em 0 0;
+}
+
+.blog h2 {
+    font-family: Noto Serif;
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+    color: white;
+}
+
+.entrada {
+    background-color: white;
+}
+
+.contenido a {
+    text-decoration: none;
+}
+
+.contenido {
+    font-weight: bold;
+    margin: 1em 0 1em 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido h3,
+p,
+span {
+    font-family: Noto Sans;
+}
+
+.contenido:nth-child(2) {
+    gap: 1em;
+}
+
+.contenido span {
+    color: #c93535;
+}
+
+.boton {
+    font-family: Noto Sans;
+    color: white;
+    background-color: #c93535;
+    padding: 0.5em 2em 0.5em 2em;
+    border-radius: 0.3em;
+    margin: 1.5em 0 1em 0;
+    transform: scale(1);
+    transition: 1.5s;
+}
+
+.boton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.categorias {
+    font-weight: bold;
+    margin: 1em 1em 1em 0;
+    text-align: center;
+    color: white;
+    font-family: Noto Sans;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.itinerarios {
+    background-color: #9c2424;
+    flex-basis: 50%;
+    height: 200px;
+}
+
+.mecanica {
+    background-color: #707070;
+    flex-basis: 50%;
+    height: 200px;
+}
+
+.horarios {
+    background-color: #c93434;
+    flex-basis: 50%;
+    height: 200px;
+}
+
+.aparcamiento {
+    background-color: #b47d7d;
+    flex-basis: 50%;
+    height: 200px;
+}
+
+.informacion {
+    margin: 0 1em 0 0;
+    font-family: Noto Sans;
+    padding: 1em 0 0 0.2em;
+    color: white;
+    background-image: linear-gradient(to right, #000000, #c93535);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.informacion ul {
+    padding: 0 0 0 2em;
+    list-style: square;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.informacion1,
+.informacion2,
+.informacion3 {
+    flex-basis: 100%;
+}
+
+.redes-sociales {
+    text-align: center;
+    margin: 0 0 1em 0;
+    flex-basis: 100%;
+}
+
+.copyright {
+    margin: 0 1em 0 0;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+
+/*ICONS*/
+
+.fab {
+    padding-top: 1em;
+    font-size: 1.5em;
+}
+
+.fas {
+    font-size: 3em;
+    padding: 0.4em;
+}
+
+.rutas,
+.mecanica,
+.bicicletas,
+.consejos {
+    /*alineando iconos y texto*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*RESPONSIVE PARA TABLETS*/
+
+@media screen and (min-width: 768px) {
+    header {
+        background-image: url("../img/hero.jpg");
+        background-size: cover;
+        padding: 1em 0 0 0;
+    }
+    .hero {
+        margin: 0;
+    }
+    
+    .blog {
+        justify-content: space-between;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    .blog h2 {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+    .entrada {
+        flex-basis: 48%;
+    }
+    .bienvenida {
+        margin-bottom: 1.5em;
+    }
+    .bienvenida h1 {
+        flex-basis: 60%;
+        justify-content: start;
+    }
+    .categorias {
+        margin: 2em 0 1em 0;
+    }
+    .informacion {
+        margin: 0;
+    }
+    .copyright {
+        margin: 0;
+    }
+}
+
+
+/*RESPONSIVE PARA DESKTOPS*/
+
+@media screen and (min-width: 1024px) {
+    .hero {
+        margin: 0 auto;
+        height: 130px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+    }
+    .hero img {
+        width: 25%;
+    }
+    .nav-hero {
+        flex-direction: row;
+    }
+    .nav-hero a {
+        margin: 0.5em;
+    }
+    .bienvenida {
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0 0 2em 0;
+    }
+    .bienvenida h1 {
+        margin-left: 10%;
+        flex-basis: 40%;
+    }
+    .blog {
+        margin: 0 auto;
+        max-width: 70%;
+    }
+    .entrada {
+        flex-basis: 30%;
+    }
+    .contenido {
+        margin: 0.5em;
+    }
+    .categorias {
+        margin: 0 auto;
+        margin-top: 2em;
+        width: 70%;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .informacion {
+        margin: 0 auto;
+        padding-bottom: 0.5em;
+        width: 70%;
+        flex-wrap: nowrap;
+    }
+    .informacion1 {
+        flex-basis: 100%;
+        flex-grow: 2;
+    }
+    .informacion h4 {
+        margin-bottom: 1em;
+    }
+    footer {
+        margin-top: 1em;
+        background-color: #551212;
+    }
+    .fab {
+        padding-top: 0;
+    }
+}

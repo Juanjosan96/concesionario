@@ -36,16 +36,16 @@ class CocheController extends Controller
      */
     public function store(Request $request)
     {
-        $coche=new Coche();
+        $datos=new Coche();
 
-        $coche->nombre=$request->nombre;  //añadir las demas categorias aqui
-        $coche->marca=$request->marca;
-        $coche->modelo=$request->modelo;
-        $coche->anio=$request->anio;
-        $coche->matricula=$request->matricula;
-        $coche->color=$request->color;
-        $coche->descripcion=$request->descripcion;
-        $coche->imagen=$request->imagen;
+        $datos->nombre=$request->nombre;  //añadir las demas categorias aqui
+        $datos->marca=$request->marca;
+        $datos->modelo=$request->modelo;
+        $datos->anio=$request->anio;
+        $datos->matricula=$request->matricula;
+        $datos->color=$request->color;
+        $datos->descripcion=$request->descripcion;
+        $datos->imagen=$request->imagen;
         // if($imagen=$request->file('imagen')){
 
         //     $ruta='imagen/';
@@ -53,8 +53,12 @@ class CocheController extends Controller
         // }
         // return $coche;
         // return $request->all();
-        $coche->save();
-        return redirect()->route('coche.show',$coche);
+        // $cocha =Coche::orderby('nombre')->get();
+        // $cocha->push();
+        $datos->save();
+        return redirect()->route('coche.show',$datos);
+
+        
     }
 
     /**

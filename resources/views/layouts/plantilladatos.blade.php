@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+@extends('layouts.plantilla')
+@section('contenido')
+
+
+
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -18,23 +23,83 @@
         <img src=" /img/logo.png" alt="logo">
 
         <div class="nav-hero">
-            <a href="{{route('coche.index')}}">Inicio</a>
-            {{-- <a href="#">Nosotros</a>
-            <a href="#">Consultas</a> --}}
-            <a href="{{route('coche.create')}}">Crear</a>
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Consultas</a>
+            <a href="#">Crear/Editar</a>
         </div>
 
     </div>
     <div class="bienvenida">
         <h1>BIENVENIDOS A CONCESIONARIOS FRAN & JUANJO</h1>
     </div>
-</header>
+</header> --}}
 
 <!--MAIN-->
 
-@yield('contenido')
+
+
+
+
+
+@yield('formulario')
+
+
+
+
+
+
+
+
+{{-- <div id="new"> 
+  <h1><i> LOGIN TO BIOS</i></h1>
+</div>  --}}
+<section class="stark-login">
+  
+  {{-- <form action="" method="">	 --}}
+    <div id="fade-box">
+
+      @yield('prueba')
+      <input type="text" name="nombre" placeholder="Nombre" required >
+      <input type="text" name="marca" placeholder="Marca" required >
+      <input type="text" name="modelo" placeholder="Modelo" required >
+      <input type="text" name="anio"  placeholder="Año" required >
+      <input type="text" name="matricula" placeholder="Matricula" required >
+      <input type="text" name="color"  placeholder="Color" required >
+      <input type="text" name="descripcion" placeholder="Descripcion" required >
+        <input type="file" name="imagen" class="hidden"required>
+      <button><a href="{{route('coche.index')}}">Mandar</a></button>
+
+          
+{{-- <button><a href="{{route('coche.index')}}">Mandar</a></button> --}}
+          {{-- <button>Enviar</button>  --}}
+        </section>        
+
+        </div>
+      {{-- </form> --}}
+            
+
+          </main>
+  
+          @endsection
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--CATEGORIAS-->
-<section class="categorias">
+{{-- <section class="categorias">
     <div class="itinerarios">
         <i class="fas fa-map-marker"></i>
         <p>Itinerarios de concentraciones de vehículos clásicos</p>
@@ -92,15 +157,8 @@
         <h5>Fran&Juanjo Motorsports Dealership © 2022</h5>
     </section>
 </footer>
-
-
-
-
-
-
-
-
-
-
 </body>
-</html>
+</html> --}}
+
+
+
