@@ -7,7 +7,7 @@
   <title>@yield('titulo')</title>
   <link rel="stylesheet" href="/css/estilo.css" />
   <link rel="stylesheet" href="/css/formulario.css" />
-
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -66,17 +66,28 @@
             </p>
         </div>
 
-        <div class="informacion2">
+        {{-- <div class="informacion2">
             <h4>Últimos vehículos restaurados</h4>
-            <ul>
-                <li>Citroën 2CV de 1961</li>
+            <ul> --}}
+                {{-- <li>Citroën 2CV de 1961</li>
                 <li>Ford Mustang Boss 302 de 1969</li>
                 <li>Mini Cooper S de 1970</li>
                 <li>Daihatsu Midget de 1963</li>
-                <li>Ford Model T Tourer de 1915</li>
+                <li>Ford Model T Tourer de 1915</li> --}}
+
+                {{-- <li>{{$coches[0]->nombre}} de {{$coches[0]->anio}}</li>
+                <li>{{$coches[1]->nombre}} de {{$coches[1]->anio}}</li>
+                <li>{{$coches[2]->nombre}} de {{$coches[2]->anio}}</li>
+                <li>{{$coches[3]->nombre}} de {{$coches[3]->anio}}</li>
+                <li>{{$coches[4]->nombre}} de {{$coches[4]->anio}}</li>
+                <li>{{$coches[5]->nombre}} de {{$coches[5]->anio}}</li> --}}
+                {{-- {{$datos->nombre}} --}}
+                {{-- {{$coches}} --}}
+                
+                {{-- @yield('ultimo')
             </ul>
-        </div>
-        <div class="informacion3">
+        </div> --}}
+        {{-- <div class="informacion3">
             <h4>Síguenos en nuestras redes sociales</h4>
             <p class="redes-sociales">
                 <i class="fab fa-facebook-f"></i>
@@ -85,7 +96,7 @@
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-pinterest-p"></i>
             </p>
-        </div>
+        </div> --}}
 
     </section>
     <section class="copyright">

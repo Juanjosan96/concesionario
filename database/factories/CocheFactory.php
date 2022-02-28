@@ -18,7 +18,7 @@ class CocheFactory extends Factory
             'nombre'=>$this->faker->name(),
             'marca'=>$this->faker->sentence(),
             'modelo'=>$this->faker->sentence(),
-            'anio'=>$this->faker->numerify( '20##' ),
+            'anio'=>$this->faker->numerify( '19##' ),
             'matricula'=>$this->faker->unique()->sentence(),
             'color'=>$this->faker->sentence(),
             'descripcion'=>$this->faker->paragraph(),

@@ -27,6 +27,15 @@
 </section>        
       
                 </main>
+
+                @section('ultimos')
+                {{-- <li>{{$datos[0]->nombre}} de {{$datos[0]->anio}}</li>
+                <li>{{$datos[1]->nombre}} de {{$datos[1]->anio}}</li>
+                <li>{{$datos[2]->nombre}} de {{$datos[2]->anio}}</li>
+                <li>{{$datos[3]->nombre}} de {{$datos[3]->anio}}</li>
+                <li>{{$datos[4]->nombre}} de {{$datos[4]->anio}}</li>
+                <li>{{$datos[5]->nombre}} de {{$datos[5]->anio}}</li> --}}
+@endsection
       @endsection
 
      
