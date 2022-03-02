@@ -26,6 +26,8 @@
         {{-- <img src="img/ {{route('coche.show',$coches[0]->imagen)}}" alt="texto entrada"> --}}
         {{-- <img src="/img/ {{route('coche.show',$coches[0]->imagen)}}" alt="texto entrada"> --}}
         <img src="/img/{{$coches[0]->imagen}} "alt="La imagen no ha cargado correctamente"height='30%'> 
+        <img href="/img/{{$coches[0]->imagen}} "alt="La imagen no ha cargado correctamente"height='30%'> 
+
         <div class="contenido">
             {{-- <h3>FERRARI TESTAROSSA</h3> --}}
            {{-- <span><h3>{{$coches[1]->nombre}}</h3></span> --}}
@@ -58,6 +60,8 @@
     </article>
     <article class="entrada">
         <img src="/img/{{$coches[3]->imagen}} "alt="La imagen no ha cargado correctamente"width='30%'> 
+        <img href="/img/{{$coches[3]->imagen}} "alt="La imagen no ha cargado correctamente"width='30%'> 
+        
         <div class="contenido">
             <p>NOMBRE: <span>{{strtoupper($coches[3]->nombre)}}</span></p>
             <p>AÑO: <span>1972</span></p>
